@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academia LUMINA — Ingreso Universitario 2026</title>
+  <meta name="description" content="Academia LUMINA: Clases y simulacros tipo examen real, estrategias para entrevistas y preparación con IA. Arequipa - Perú." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="lumina-enhance.css">
+</head>
+<body>
+  <!-- Borde lila como la pieza gráfica -->
+  <div class="frame-border"></div>
+
+  <!-- Header / Menú (estructura de la 3ra imagen) -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#inicio" class="brand">
+        <img src="img/lumina-logo.png" alt="Logo LUMINA" class="logo" />
+        <span class="brand-name">LUMINA</span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="#beneficios" class="nav-link">Beneficios</a>
+        <a href="#planes" class="nav-link">Planes</a>
+        <a href="#testimonios" class="nav-link">Testimonios</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#inscripcion" class="btn btn-cta">Inscríbete</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero: colores y mensajes de la 1ra imagen -->
+  <section class="hero" id="inicio" data-reveal>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="mini">ACADEMIA LUMINA</p>
+        <h1>Prepárate para <span class="accent">ingresar</span> a la <span class="accent">universidad</span></h1>
+        <div class="year">2026</div>
+
+        <div class="benefit-box">
+          <span class="title">Beneficios clave:</span>
+          <ul class="bullets">
+            <li>Clases y simulacros <strong>tipo examen real</strong>.</li>
+            <li>Estrategias para <strong>entrevistas</strong>.</li>
+            <li>Trabajamos con <strong>Inteligencia Artificial (IA)</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="cta-row">
+          <a href="#inscripcion" class="btn btn-green">Inscríbete ahora</a>
+          <div class="contacts">
+            <a href="tel:+51955340650">+51 955340650</a>
+            <span>•</span>
+            <a href="mailto:academialumina@gmail.com">academialumina@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-logo-stack">
+        <img src="img/lumina-logo.png" alt="Lumina logotipo" class="hero-logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="section" id="beneficios" data-reveal>
+    <div class="container">
+      <h2 class="section-title">Beneficios clave</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Simulacros reales</h3>
+          <p>Ensayos con tiempos oficiales y reportes por área.</p>
+        </article>
+        <article class="card">
+          <h3>Entrevistas</h3>
+          <p>Prácticas guiadas y estrategias para destacar.</p>
+        </article>
+        <article class="card">
+          <h3>Potenciado con IA</h3>
+          <p>Rutas de estudio personalizadas y feedback automático.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inversión / Precios -->
+<section class="section" id="precios" data-reveal>
+  <div class="container">
+    <div class="pricing-wrap">
+      <header class="pricing-head">
+        <h2 class="section-title grad-text">Inversión</h2>
+        <p>Mensualidad accesible y un pago único por inscripción. Sin cobros ocultos.</p>
+      </header>
+
+      <div class="billing-controls" aria-label="Selecciona forma de pago">
+        <span class="billing-label">Mensual</span>
+        <div id="billingSwitch" class="switch" role="switch" aria-checked="false" tabindex="0"></div>
+        <span class="billing-label">Anual</span>
+        <span class="badge-save">Ahorra 15%</span>
+      </div>
+      <div class="coupon-row">
+        <input id="couponInput" type="text" placeholder="Cupón (ej: LUMINA10)" aria-label="Ingresar cupón de descuento">
+        <button class="button secondary apply" type="button" id="applyCoupon">Aplicar</button>
+      </div>
+      <div class="compare" id="comparePrices" aria-live="polite"></div>
+
+      <div class="pricing-card" role="region" aria-label="Tarifa LUMINA">
+        <div class="row">
+          <div class="price-item">
+            <span class="label">Mensualidad</span>
+            <span class="amount"><span class="currency">S/</span>100</span>
+            <span class="hint">Pagos mes a mes</span>
+          </div>
+          <div class="divider" aria-hidden="true"></div>
+          <div class="price-item">
+            <span class="label">Inscripción</span>
+            <span class="amount"><span class="currency">S/</span>50</span>
+            <span class="hint">Pago único al inscribirte</span>
+          </div>
+        </div>
+
+        <ul class="perks" aria-label="Incluye">
+          <li>Clases en vivo</li>
+          <li>Simulacros</li>
+          <li>Asesoría para postulaciones</li>
+        </ul>
+
+        <div class="cta-row">
+          <button class="button cta-inscribir" type="button" data-whatsapp="51999999999">Inscribirme</button>
+          <button class="button secondary cta-consulta" type="button" data-whatsapp="51999999999">Hablar con asesor</button>
+        </div>
+      </div>
+
+      <div class="guarantee" data-reveal>
+        <span class="chip">Transparente</span>
+        Puedes pausar o reactivar cuando quieras.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios -->
+  <section class="section" id="testimonios" data-reveal>
+    <div class="container">
+      <h2 class="section-title">Testimonios</h2>
+      <div class="testi">
+        <figure class="quote">
+          <blockquote>“Con los simulacros entendí dónde mejorar y logré mi objetivo.”</blockquote>
+          <figcaption>— Valeria M., Ingeniería</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>“Las estrategias para entrevistas me dieron seguridad y claridad.”</blockquote>
+          <figcaption>— Gabriel R., Medicina</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section alt" id="faq" data-reveal>
+    <div class="container">
+      <h2 class="section-title">Preguntas frecuentes</h2>
+      <div class="accordion">
+        <details open>
+          <summary>¿Clases presenciales o virtuales?</summary>
+          <p>Modelo mixto con sesiones en vivo y soporte en plataforma.</p>
+        </details>
+        <details>
+          <summary>¿Qué significa “tipo examen real”?</summary>
+          <p>Simulacros con tiempos oficiales y estructura similar a la evaluación real.</p>
+        </details>
+        <details>
+          <summary>¿Cómo usan IA?</summary>
+          <p>Analizamos desempeño y sugerimos rutas de estudio, además de practicar entrevistas.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inscripción -->
+  <section class="section" id="inscripcion" data-reveal>
+    <div class="container">
+      <h2 class="section-title">Inscríbete ahora</h2>
+      <form class="form" onsubmit="return enviarInscripcion(event)">
+        <div class="grid-2">
+          <label>Nombre y apellido
+            <input type="text" name="name" required />
+          </label>
+          <label>Correo
+            <input type="email" name="email" required />
+          </label>
+          <label>Teléfono / WhatsApp
+            <input type="tel" name="phone" required />
+          </label>
+          <label>Plan de interés
+            <select name="plan" required>
+              <option>Básico</option>
+              <option selected>Avanzado</option>
+              <option>Full</option>
+            </select>
+          </label>
+        </div>
+        <label>Mensaje
+          <textarea name="message" rows="4" placeholder="Cuéntanos tu objetivo"></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn btn-green" type="submit">Enviar</button>
+          <a class="btn btn-outline" href="mailto:academialumina@gmail.com">Escribir por correo</a>
+        </div>
+        <p class="form-note">Al enviar, se abrirá WhatsApp con tus datos para confirmar la inscripción.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <img src="img/lumina-logo.png" class="logo small" alt="Logo pie" />
+        <div>
+          <strong>Academia LUMINA</strong><br>
+          JESÚS–LAURICCOCHA–HUÁNUCO, Perú
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Contacto</h4>
+        <p><a href="tel:+51955340650">+51 955340650</a><br>
+        <a href="mailto:academialumina@gmail.com">academialumina@gmail.com</a></p>
+      </div>
+      <div class="f-col">
+        <h4>Menú</h4>
+        <p><a href="#beneficios">Beneficios</a></p>
+        <p><a href="#planes">Planes</a></p>
+        <p><a href="#testimonios">Testimonios</a></p>
+        <p><a href="#faq">FAQ</a></p>
+      </div>
+    </div>
+    <div class="copy">© <span id="y"></span> Academia LUMINA. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="script.js"></script>
+<script src="lumina-enhance.js"></script>
+<section id="precios" aria-labelledby="precios-title" data-reveal>
+  <div class="container">
+    <div class="pricing-wrap">
+      <header class="pricing-head">
+        <h2 id="precios-title" class="grad-text">Inversión</h2>
+        <p>Estudia con nosotros con una mensualidad accesible y un pago único por inscripción.</p>
+      </header>
+
+      <div class="billing-controls" aria-label="Selecciona forma de pago">
+  <span class="billing-label">Mensual</span>
+  <div id="billingSwitch" class="switch" role="switch" aria-checked="false" tabindex="0"></div>
+  <span class="billing-label">Anual</span><span class="badge-save">Ahorra 15%</span>
+</div>
+<div class="coupon-row">
+  <input id="couponInput" type="text" placeholder="Cupón (ej: LUMINA10)" aria-label="Ingresar cupón de descuento">
+  <button class="button secondary apply" type="button" id="applyCoupon">Aplicar</button>
+</div>
+<div class="compare" id="comparePrices" aria-live="polite"></div>
+
+      <div class="pricing-card" role="region" aria-label="Tarifa LUMINA">
+        <div class="row">
+          <div class="price-item">
+            <span class="label">Mensualidad</span>
+            <span class="amount"><span class="currency">S/</span>100</span>
+            <span class="hint">Pagos mes a mes</span>
+          </div>
+          <div class="divider" aria-hidden="true"></div>
+          <div class="price-item">
+            <span class="label">Inscripción</span>
+            <span class="amount"><span class="currency">S/</span>50</span>
+            <span class="hint">Pago único al inscribirte</span>
+          </div>
+        </div>
+
+        <ul class="perks" aria-label="Incluye">
+          <li>Clases en vivo</li>
+          <li>Simulacros</li>
+          <li>Asesoría para postulaciones</li>
+        </ul>
+
+        <div class="cta-row">
+          <button class="button cta-inscribir" type="button" aria-label="Inscribirme ahora">Inscribirme</button>
+          <button class="button secondary cta-consulta" type="button" aria-label="Hablar con asesor">Hablar con asesor</button>
+        </div>
+      </div>
+
+      <div class="guarantee" data-reveal>
+        <span class="chip">Transparente</span>
+        Sin cobros ocultos. Puedes pausar o reactivar cuando quieras.
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
